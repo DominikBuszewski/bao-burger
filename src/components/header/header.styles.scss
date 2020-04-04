@@ -1,0 +1,48 @@
+$prime-color: white;
+$secondary-color: rgb(231, 84, 84);
+$mobile: "(max-width: 1023px)";
+$desktop: "(min-width: 1024px)";
+
+.header {
+  width: 100vw;
+  height: 5vh;
+  //   background-color: blue;
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  background-color: black;
+  opacity: 0.8;
+
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    :hover {
+      color: $secondary-color;
+      cursor: pointer;
+    }
+
+    li {
+      list-style: none;
+      margin-left: 20px;
+      font-size: 1rem;
+      text-decoration: none;
+
+      @media #{$mobile} {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .logo {
+    align-self: center;
+    color: $secondary-color;
+    font-size: 2rem;
+  }
+
+  .nav-item-container {
+    text-decoration: none;
+    color: white;
+  }
+}

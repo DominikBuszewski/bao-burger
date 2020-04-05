@@ -1,0 +1,15 @@
+.menu-nav-bar {
+  width: 50%;
+  height: 20%;
+
+  .categories {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .category {
+      list-style: none;
+      margin: 20px;
+    }
+  }
+}

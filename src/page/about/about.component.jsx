@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.styles.scss";
 
-const About = () => (
+const AboutPage = () => (
   <div className="about">
     <div className="sections">
       <section className="main-info">
@@ -56,4 +56,4 @@ const About = () => (
   </div>
 );
 
-export default About;
+export default AboutPage;

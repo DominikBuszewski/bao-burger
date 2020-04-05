@@ -1,31 +1,8 @@
 .menu {
   color: white;
-  height: 95vh;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  .menu-directory {
-    width: 80%;
-    height: 80%;
-    background-color: green;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .menu-nav-bar {
-      margin-top: 30px;
-      display: flex;
-
-      .categories {
-        display: flex;
-
-        .category {
-          margin: 10px;
-          list-style: none;
-        }
-      }
-    }
-  }
 }

@@ -1,11 +1,29 @@
 import React from "react";
 import "./menu.styles.scss";
-import MenuDirectory from "../../components/menu-directory/menu-directory.components";
+import MenuHeader from "../../components/menu-header/menu-header.component";
+import MenuOverview from "../../components/menu-overview/menu-overview.component";
+import MENU_DATA from "../../menu.data";
 
-const Menu = () => (
-  <div className="Menu">
-    <MenuDirectory />
-  </div>
-);
+class MenuPage extends React.Component {
+  constructor(props) {
+    super(props);
 
-export default Menu;
+    this.state = {
+      sections: MENU_DATA,
+    };
+  }
+
+  componentDidMount() {}
+
+  render() {
+    const { sections } = this.state;
+    return (
+      <div className="menu">
+        <MenuHeader />
+        <MenuOverview items={sections} />
+      </div>
+    );
+  }
+}
+
+export default MenuPage;

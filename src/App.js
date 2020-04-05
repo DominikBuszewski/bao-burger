@@ -3,8 +3,8 @@ import React from "react";
 import "./App.scss";
 import HomePage from "./page/homepage/homepage.component";
 import Header from "./components/header/header.component";
-import Menu from "./page/Menu/menu.component";
-import About from "./page/about/about.component";
+import MenuPage from "./page/Menu/menu.component";
+import AboutPage from "./page/about/about.component";
 import { Route, Switch } from "react-router-dom";
 
 function App() {
@@ -13,8 +13,8 @@ function App() {
       <Header />
       <Switch>
         <Route exact path="/" component={HomePage} />
-        <Route path="/about" component={About} />
-        <Route path="/menu" component={Menu} />
+        <Route path="/about" component={AboutPage} />
+        <Route path="/menu" component={MenuPage} />
       </Switch>
     </div>
   );

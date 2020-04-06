@@ -5,7 +5,7 @@ const MENU_DATA = [
     imageUrl: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
     price: 25,
     // routeName: "burgers",
-    title: "burgers",
+    category: "burgers",
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ const MENU_DATA = [
     imageUrl: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
     price: 25,
     // routeName: "burgers",
-    title: "burgers",
+    category: "burgers",
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ const MENU_DATA = [
     imageUrl: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
     price: 25,
     // routeName: "burgers",
-    title: "burgers",
+    category: "burgers",
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ const MENU_DATA = [
     imageUrl: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
     price: 25,
     // routeName: "burgers",
-    title: "burgers",
+    category: "burgers",
   },
   {
     id: 5,
@@ -37,7 +37,7 @@ const MENU_DATA = [
     imageUrl: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
     price: 25,
     // routeName: "burgers",
-    title: "burgers",
+    category: "burgers",
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ const MENU_DATA = [
     imageUrl: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
     price: 25,
     // routeName: "burgers",
-    title: "burgers",
+    category: "burgers",
   },
   {
     id: 7,
@@ -53,7 +53,7 @@ const MENU_DATA = [
     imageUrl: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
     price: 25,
     // routeName: "burgers",
-    title: "burgers",
+    category: "burgers",
   },
   {
     id: 8,
@@ -61,7 +61,7 @@ const MENU_DATA = [
     imageUrl: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
     price: 25,
     // routeName: "burgers",
-    title: "burgers",
+    category: "burgers",
   },
   {
     id: 9,
@@ -69,7 +69,7 @@ const MENU_DATA = [
     imageUrl: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
     price: 25,
     // routeName: "burgers",
-    title: "drinks",
+    category: "drinks",
   },
   {
     id: 10,
@@ -77,7 +77,7 @@ const MENU_DATA = [
     imageUrl: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
     price: 25,
     // routeName: "burgers",
-    title: "drinks",
+    category: "drinks",
   },
   {
     id: 11,
@@ -85,7 +85,7 @@ const MENU_DATA = [
     imageUrl: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
     price: 25,
     // routeName: "burgers",
-    title: "drinks",
+    category: "drinks",
   },
   {
     id: 12,
@@ -93,7 +93,7 @@ const MENU_DATA = [
     imageUrl: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
     price: 25,
     // routeName: "burgers",
-    title: "Other",
+    category: "Other",
   },
   {
     id: 13,
@@ -101,7 +101,7 @@ const MENU_DATA = [
     imageUrl: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
     price: 25,
     // routeName: "burgers",
-    title: "Other",
+    category: "Other",
   },
   {
     id: 14,
@@ -109,7 +109,7 @@ const MENU_DATA = [
     imageUrl: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
     price: 25,
     // routeName: "burgers",
-    title: "Other",
+    category: "Other",
   },
 ];
 

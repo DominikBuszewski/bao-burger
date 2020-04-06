@@ -1,6 +1,6 @@
 import React from "react";
 import "./menu.styles.scss";
-import MenuHeader from "../../components/menu-header/menu-header.component";
+import MenuHeaderButton from "../../components/menu-header/menu-header.component";
 import MenuOverview from "../../components/menu-overview/menu-overview.component";
 import MENU_DATA from "../../menu.data";
 
@@ -9,18 +9,59 @@ class MenuPage extends React.Component {
     super(props);
 
     this.state = {
-      sections: MENU_DATA,
+      categories: MENU_DATA,
+      filteredByCategory: [],
     };
   }
 
-  componentDidMount() {}
+  componentDidMount() {
+    this.setState({
+      filteredByCategory: this.state.categories,
+    });
+  }
+
+  // handleChange = e => {
+  //   this.setState({filteredCategory: e.target.value})
+  // }
+
+  handleFilterEvent = (event) => {
+    const { filteredByCategory } = this.state;
+
+    const filterByCategory = event.target.value;
+    console.log(event.target.value);
+    let filterCategory = [];
+    if (event.target.value === "All") {
+      filterCategory = filteredByCategory;
+    } else {
+      filterCategory = filteredByCategory.filter(
+        (asd) => asd.category.toLowerCase() === filterByCategory.toLowerCase()
+      );
+    }
+    this.setState({ filteredByCategory: filterCategory });
+  };
 
   render() {
-    const { sections } = this.state;
+    const { filteredByCategory } = this.state;
+    const all = "All";
+    const burgers = "Burgers";
+    const drinks = "Drinks";
+    const other = "Other";
     return (
       <div className="menu">
-        <MenuHeader />
-        <MenuOverview items={sections} />
+        <div className="categories">
+          <MenuHeaderButton category={all} onClick={this.handleFilterEvent} />
+          <MenuHeaderButton
+            category={burgers}
+            onClick={this.handleFilterEvent}
+          />
+          <MenuHeaderButton
+            category={drinks}
+            onClick={this.handleFilterEvent}
+          />
+          <MenuHeaderButton category={other} onClick={this.handleFilterEvent} />
+        </div>
+
+        <MenuOverview items={filteredByCategory} />
       </div>
     );
   }

@@ -1,5 +1,4 @@
 import React from "react";
-
 import "./App.scss";
 import HomePage from "./page/homepage/homepage.component";
 import Header from "./components/header/header.component";

@@ -8,7 +8,7 @@ const MenuItem = ({ id, name, price, imageUrl }) => (
       style={{ backgroundImage: `url(${imageUrl})` }}
     ></div>
     <div className="menu-item-description">
-      <div className="menu-id-number">Menu number:{id}</div>
+      <div className="menu-id-number">{id}</div>
       <div className="name">{name}</div>
       <div className="price">{price}$</div>
     </div>

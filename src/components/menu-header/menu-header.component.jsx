@@ -1,14 +1,10 @@
 import React from "react";
 import "./menu-header.styles.scss";
 
-const MenuHeader = () => (
+const MenuHeaderButton = ({ category }) => (
   <div className="menu-nav-bar">
-    <ul className="categories">
-      <li className="category">Burgers</li>
-      <li className="category">Drinks</li>
-      <li className="category">Others</li>
-    </ul>
+    <button className="category">{category}</button>
   </div>
 );
 
-export default MenuHeader;
+export default MenuHeaderButton;

@@ -4,7 +4,9 @@ import HomePage from "./page/homepage/homepage.component";
 import Header from "./components/header/header.component";
 import MenuPage from "./page/Menu/menu.component";
 import AboutPage from "./page/about/about.component";
+import ContactPage from "./page/contact/contact.component";
 import { Route, Switch } from "react-router-dom";
+import GalleryPage from "./page/gallery/gallery.component";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
         <Route exact path="/" component={HomePage} />
         <Route path="/about" component={AboutPage} />
         <Route path="/menu" component={MenuPage} />
+        <Route path="/contact" component={ContactPage} />
+        <Route path="/gallery" component={GalleryPage} />
       </Switch>
     </div>
   );

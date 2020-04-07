@@ -2,7 +2,7 @@ const MENU_DATA = [
   {
     id: 1,
     name: "Whooper",
-    imageUrl: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
+    imageUrl: "https://pizzaportal.pl/i/wp-content/uploads/2019/02/burger.jpg",
     price: 25,
     // routeName: "burgers",
     category: "burgers",
@@ -10,7 +10,7 @@ const MENU_DATA = [
   {
     id: 2,
     name: "Whooper2",
-    imageUrl: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
+    imageUrl: "https://pizzaportal.pl/i/wp-content/uploads/2019/02/burger.jpg",
     price: 25,
     // routeName: "burgers",
     category: "burgers",
@@ -18,7 +18,7 @@ const MENU_DATA = [
   {
     id: 3,
     name: "Whooper3",
-    imageUrl: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
+    imageUrl: "https://pizzaportal.pl/i/wp-content/uploads/2019/02/burger.jpg",
     price: 25,
     // routeName: "burgers",
     category: "burgers",
@@ -26,7 +26,7 @@ const MENU_DATA = [
   {
     id: 4,
     name: "Whooper4",
-    imageUrl: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
+    imageUrl: "https://pizzaportal.pl/i/wp-content/uploads/2019/02/burger.jpg",
     price: 25,
     // routeName: "burgers",
     category: "burgers",
@@ -34,7 +34,7 @@ const MENU_DATA = [
   {
     id: 5,
     name: "Whooper",
-    imageUrl: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
+    imageUrl: "https://pizzaportal.pl/i/wp-content/uploads/2019/02/burger.jpg",
     price: 25,
     // routeName: "burgers",
     category: "burgers",
@@ -42,7 +42,7 @@ const MENU_DATA = [
   {
     id: 6,
     name: "Whooper2",
-    imageUrl: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
+    imageUrl: "https://pizzaportal.pl/i/wp-content/uploads/2019/02/burger.jpg",
     price: 25,
     // routeName: "burgers",
     category: "burgers",
@@ -50,7 +50,7 @@ const MENU_DATA = [
   {
     id: 7,
     name: "Whooper3",
-    imageUrl: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
+    imageUrl: "https://pizzaportal.pl/i/wp-content/uploads/2019/02/burger.jpg",
     price: 25,
     // routeName: "burgers",
     category: "burgers",
@@ -58,7 +58,7 @@ const MENU_DATA = [
   {
     id: 8,
     name: "Whooper4",
-    imageUrl: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
+    imageUrl: "https://pizzaportal.pl/i/wp-content/uploads/2019/02/burger.jpg",
     price: 25,
     // routeName: "burgers",
     category: "burgers",
@@ -66,7 +66,8 @@ const MENU_DATA = [
   {
     id: 9,
     name: "Cola",
-    imageUrl: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
+    imageUrl:
+      "https://munjodesign.pl/wp-content/uploads/2019/12/cocacola-butelka.jpg",
     price: 25,
     // routeName: "burgers",
     category: "drinks",
@@ -74,7 +75,8 @@ const MENU_DATA = [
   {
     id: 10,
     name: "Sprite",
-    imageUrl: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
+    imageUrl:
+      "https://www.coca-cola.pl/content/dam/one/pl/marki/sprite/sprite_600x600m.jpg",
     price: 25,
     // routeName: "burgers",
     category: "drinks",
@@ -82,7 +84,8 @@ const MENU_DATA = [
   {
     id: 11,
     name: "Orange Juice",
-    imageUrl: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
+    imageUrl:
+      "https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/orange-juice-1296x728-feature.jpg?w=1155&h=1528",
     price: 25,
     // routeName: "burgers",
     category: "drinks",
@@ -90,7 +93,8 @@ const MENU_DATA = [
   {
     id: 12,
     name: "Fries",
-    imageUrl: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
+    imageUrl:
+      "https://frommybowl.com/wp-content/uploads/2017/09/Perfect_Oven_Baked_Fries_Oil_Free_Vegan_FromMyBowl-14.jpg",
     price: 25,
     // routeName: "burgers",
     category: "Other",
@@ -98,7 +102,8 @@ const MENU_DATA = [
   {
     id: 13,
     name: "Onion rings",
-    imageUrl: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSni-3I7AFNqt5EsbF0jgC-WFS3iy4UlUz5bBlmA-8MMBH3F-8V&usqp=CAU",
     price: 25,
     // routeName: "burgers",
     category: "Other",
@@ -106,7 +111,8 @@ const MENU_DATA = [
   {
     id: 14,
     name: "Salad",
-    imageUrl: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
+    imageUrl:
+      "https://www.bora.com/fileadmin/website_content/Erleben/Cooking/myBora_Integration_2018/Melissa_Hemsley_Edition/1010_Melissa_Hemsley_Greek_Chicken_Salad.jpg",
     price: 25,
     // routeName: "burgers",
     category: "Other",

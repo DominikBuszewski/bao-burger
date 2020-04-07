@@ -1,7 +1,7 @@
 import React from "react";
 import "./menu.styles.scss";
-import MenuHeaderButton from "../../components/menu-header/menu-header.component";
-import MenuOverview from "../../components/menu-overview/menu-overview.component";
+import MenuHeader from "../../components/menu-header/menu-header.component";
+import MenuOverview from "../../components/menu-overview/menu-overview.component.jsx";
 import MENU_DATA from "../../menu.data";
 
 class MenuPage extends React.Component {
@@ -9,59 +9,44 @@ class MenuPage extends React.Component {
     super(props);
 
     this.state = {
-      categories: MENU_DATA,
-      filteredByCategory: [],
+      items: MENU_DATA,
+      filteredItemsByCategory: [],
     };
   }
 
   componentDidMount() {
-    this.setState({
-      filteredByCategory: this.state.categories,
-    });
+    this.setState({ filteredItemsByCategory: this.state.items });
   }
 
-  // handleChange = e => {
-  //   this.setState({filteredCategory: e.target.value})
-  // }
-
   handleFilterEvent = (event) => {
-    const { filteredByCategory } = this.state;
-
-    const filterByCategory = event.target.value;
-    console.log(event.target.value);
-    let filterCategory = [];
-    if (event.target.value === "All") {
-      filterCategory = filteredByCategory;
+    const byCategory = event.target.value;
+    let filteredItems = [];
+    console.log(event);
+    console.log(this.state.items);
+    console.log(this.state.filteredItemsByCategory);
+    if (event.target.value === "all") {
+      filteredItems = this.state.items;
     } else {
-      filterCategory = filteredByCategory.filter(
-        (asd) => asd.category.toLowerCase() === filterByCategory.toLowerCase()
+      filteredItems = this.state.items.filter(
+        (item) => item.category.toLowerCase() === byCategory.toLowerCase()
       );
     }
-    this.setState({ filteredByCategory: filterCategory });
+    this.setState({ filteredItemsByCategory: filteredItems });
   };
 
+  // clickTest() {
+  //   console.log("asdasd)");
+  // }
+
   render() {
-    const { filteredByCategory } = this.state;
-    const all = "All";
-    const burgers = "Burgers";
-    const drinks = "Drinks";
-    const other = "Other";
+    const { filteredItemsByCategory } = this.state;
+    // console.log(this.handleFilterEvent);
+    // console.log(this.state.items);
+    console.log(filteredItemsByCategory);
     return (
       <div className="menu">
-        <div className="categories">
-          <MenuHeaderButton category={all} onClick={this.handleFilterEvent} />
-          <MenuHeaderButton
-            category={burgers}
-            onClick={this.handleFilterEvent}
-          />
-          <MenuHeaderButton
-            category={drinks}
-            onClick={this.handleFilterEvent}
-          />
-          <MenuHeaderButton category={other} onClick={this.handleFilterEvent} />
-        </div>
-
-        <MenuOverview items={filteredByCategory} />
+        <MenuHeader filter={this.handleFilterEvent} />
+        <MenuOverview items={filteredItemsByCategory} />
       </div>
     );
   }

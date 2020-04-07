@@ -1,19 +1,16 @@
-.menu-nav-bar {
-  width: 50%;
-  height: 20%;
+.menu-header {
+  margin-top: 5vh;
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
+  width: 280px;
+  margin-bottom: 5vh;
 
-  .category {
-    background-color: red;
-    width: 50px;
-    border: none;
+  .menu-header-button {
+    background: transparent;
     color: white;
-
-    &:hover {
-      cursor: pointer;
-      text-decoration: white underline;
-    }
+    border: 1px solid tomato;
+    width: 60px;
+    text-decoration: none;
   }
 }

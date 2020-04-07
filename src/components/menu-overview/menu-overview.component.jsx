@@ -4,15 +4,16 @@ import MenuItem from "../menu-item/menu-item.component";
 
 const MenuOverview = ({ items }) => (
   <div className="menu-overview">
-    {items.map(({ id, imageUrl, name, price, category }) => (
+    {items.map(({ id, name, price, imageUrl, category }) => (
       <MenuItem
         key={id}
-        imageUrl={imageUrl}
         name={name}
         price={price}
+        imageUrl={imageUrl}
         category={category}
       />
     ))}
   </div>
 );
+
 export default MenuOverview;

@@ -1,6 +1,7 @@
 import React from "react";
 import "./header.styles.scss";
 import { Link } from "react-router-dom";
+import CartIcon from "../cart-icon/cart-icon.component";
 
 const Header = (history, linkUrl, match) => (
   <div className="header">
@@ -22,7 +23,7 @@ const Header = (history, linkUrl, match) => (
         <li className="nav-item">Contact</li>
       </Link>
       <Link className="nav-item-container" to="/Cart">
-        <li className="nav-item">Cart</li>
+        <CartIcon className="nav-item" />
       </Link>
     </ul>
   </div>

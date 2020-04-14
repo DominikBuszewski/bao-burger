@@ -1,13 +1,25 @@
+$prime-color: rgb(255, 255, 255);
+$secondary-color: rgb(255, 230, 0);
+
 .menu-item {
   height: 150px;
-  width: 300px;
+  width: 250px;
   display: flex;
   flex-direction: column;
-  color: white;
   background-color: transparent;
   border: 1px solid white;
   position: relative;
-  // opacity: 0.5;
+
+  &:hover {
+    .add-button {
+      display: block;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      opacity: 0.8;
+      cursor: pointer;
+    }
+  }
 
   .menu-item-image {
     height: 100%;
@@ -18,16 +30,8 @@
   }
 
   .menu-item-description {
-    height: 100%;
-    font-size: 2rem;
-    width: 100%;
     display: flex;
-    // flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-end;
-    text-align: center;
-    position: absolute;
-    bottom: 20px;
+    justify-content: space-evenly;
   }
 
   .menu-id-number {
@@ -36,14 +40,10 @@
 
   .add-button {
     background-color: transparent;
-    color: white;
+    color: $prime-color;
     border: none;
     height: 30px;
     background-color: black;
-
-    &:hover {
-      opacity: 0.8;
-      cursor: pointer;
-    }
+    display: none;
   }
 }

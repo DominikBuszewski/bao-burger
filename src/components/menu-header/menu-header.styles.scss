@@ -1,16 +1,25 @@
+$prime-color: rgb(255, 255, 255);
+$secondary-color: rgb(255, 230, 0);
+
 .menu-header {
-  margin-top: 5vh;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  width: 280px;
-  margin-bottom: 5vh;
+  width: 20%;
+  height: 50vh;
 
   .menu-header-button {
     background: transparent;
     color: white;
-    border: 1px solid tomato;
-    width: 60px;
+    border: none;
+    border-bottom: 1px solid $secondary-color;
+    font-size: 3rem;
     text-decoration: none;
+
+    &:hover {
+      color: $secondary-color;
+      cursor: pointer;
+    }
   }
 }

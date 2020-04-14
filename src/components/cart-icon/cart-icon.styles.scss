@@ -1,11 +1,15 @@
+$prime-color: rgb(255, 255, 255);
+$secondary-color: rgb(255, 230, 0);
+
 .cart-icon {
-  width: 45px;
-  height: 45px;
-  position: relative;
+  width: 100px;
+  height: 50px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  background-color: $secondary-color;
+  color: $prime-color;
+  border-radius: 50px;
   cursor: pointer;
 
   .shopping-icon {
@@ -15,7 +19,7 @@
 
   .item-count {
     // position: absolute;
-    font-size: 10px;
+    font-size: 20px;
     font-weight: bold;
     // bottom: 12px;
   }

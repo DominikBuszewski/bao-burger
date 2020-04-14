@@ -2,11 +2,14 @@ import React from "react";
 import "./header.styles.scss";
 import { Link } from "react-router-dom";
 import CartIcon from "../cart-icon/cart-icon.component";
+import Logo from "../../assets/logo_transparent.png";
 
 const Header = (history, linkUrl, match) => (
   <div className="header">
-    <Link className="nav-item-container" to="/">
-      <div className="logo">LOGO</div>
+    <Link className="logo-container" to="/">
+      <div className="logo">
+        <img className="logo-img" src={Logo} />
+      </div>
     </Link>
     <ul className="nav-bar">
       <Link className="nav-item-container" to="/About">
@@ -22,7 +25,7 @@ const Header = (history, linkUrl, match) => (
       <Link className="nav-item-container" to="/Contact">
         <li className="nav-item">Contact</li>
       </Link>
-      <Link className="nav-item-container" to="/Cart">
+      <Link className="shop-icon-container" to="/Cart">
         <CartIcon className="nav-item" />
       </Link>
     </ul>

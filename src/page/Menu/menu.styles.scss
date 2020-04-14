@@ -1,9 +1,11 @@
+$prime-color: rgb(255, 255, 255);
+$secondary-color: rgb(255, 230, 0);
+$mobile: "(max-width: 1023px)";
+$desktop: "(min-width: 1024px)";
+
 .menu {
-  color: white;
-  // height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to right, rgb(20, 30, 48), rgb(36, 59, 85));
+  background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(67, 67, 67));
 }

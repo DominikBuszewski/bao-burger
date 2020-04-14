@@ -1,76 +1,108 @@
-$prime-color: white;
-$secondary-color: rgb(231, 84, 84);
+$prime-color: rgb(255, 255, 255);
+$secondary-color: rgb(255, 230, 0);
 $mobile: "(max-width: 1023px)";
 $desktop: "(min-width: 1024px)";
 
 .homepage {
-  height: 95vh;
+  height: 90vh;
   width: 100vw;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+  background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(67, 67, 67));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 2px solid $secondary-color;
 
-.sign {
-  display: flex;
-  height: 50vh;
-  width: 50vw;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  border: 2px solid $secondary-color;
-
-  .title {
-    font-size: 9rem;
-    color: $prime-color;
-
-    span {
-      color: $secondary-color;
-    }
-
-    @media #{$mobile} {
-      font-size: 5rem;
-    }
-  }
-
-  .slogan {
-    font-size: 3rem;
-
-    @media #{$mobile} {
-      font-size: 1.2rem;
-    }
-  }
-
-  .buttons {
+  .sign {
     display: flex;
-    justify-content: space-around;
-    width: 50%;
+    height: 50vh;
+    width: 50vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    // border: 2px solid $secondary-color;
 
-    @media #{$mobile} {
-      width: 80%;
-      font-size: 1rem;
-      justify-content: space-between;
-    }
+    .title {
+      font-size: 9rem;
+      color: $prime-color;
 
-    button {
-      background-color: $secondary-color;
-      border: none;
-      border-radius: 20px;
-      color: white;
-      height: 40px;
-      width: 120px;
-      margin-top: 10px;
-
-      &:hover {
-        opacity: 0.9;
-        cursor: pointer;
+      span {
+        color: $secondary-color;
       }
 
       @media #{$mobile} {
-        font-size: 0.7rem;
+        font-size: 5rem;
       }
     }
+
+    .slogan {
+      font-size: 3rem;
+
+      @media #{$mobile} {
+        font-size: 1.2rem;
+      }
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-around;
+      width: 50%;
+
+      @media #{$mobile} {
+        width: 80%;
+        font-size: 1rem;
+        justify-content: space-between;
+      }
+
+      button {
+        background-color: $prime-color;
+        border: none;
+        border-radius: 20px;
+        color: $secondary-color;
+        height: 40px;
+        width: 150px;
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: bold;
+
+        &:hover {
+          opacity: 0.9;
+          cursor: pointer;
+        }
+
+        // @media #{$mobile} {
+        //   font-size: 0.7rem;
+        // }
+      }
+    }
+  }
+
+  .burger-image {
+    height: 40vh;
+    width: 40vw;
+
+    .burger-image-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 3px solid $secondary-color;
+      border-radius: 50%;
+    }
+    .burger {
+      width: 70%;
+      height: 80%;
+    }
+    // .burger-image-container {
+    //   height: 100%;
+    //   width: 100%;
+
+    // img {
+    //   width: 100%;
+    //   height: 100%;
+    // }
   }
 }

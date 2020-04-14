@@ -1,33 +1,42 @@
-$prime-color: white;
-$secondary-color: rgb(231, 84, 84);
+$prime-color: rgb(255, 255, 255);
+$secondary-color: rgb(255, 230, 0);
 $mobile: "(max-width: 1023px)";
 $desktop: "(min-width: 1024px)";
 
 .header {
   width: 100vw;
-  height: 5vh;
+  height: 10vh;
   //   background-color: blue;
   display: flex;
   justify-content: space-evenly;
-  color: white;
-  background-color: black;
-  opacity: 0.8;
+  background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(67, 67, 67));
+  border-bottom: 2px solid $secondary-color;
+
+  link {
+    text-decoration: none;
+  }
 
   .nav-bar {
     display: flex;
     align-items: center;
-    justify-content: center;
-
+    justify-content: flex-end;
     :hover {
       color: $secondary-color;
       cursor: pointer;
+      transform: scale(1.1);
     }
 
-    li {
+    .nav-item {
       list-style: none;
-      margin-left: 20px;
-      font-size: 1rem;
       text-decoration: none;
+      font-size: 25px;
+      margin: 20px;
+      color: $prime-color;
+
+      &:hover {
+        color: $secondary-color;
+        cursor: pointer;
+      }
 
       @media #{$mobile} {
         font-size: 12px;
@@ -35,14 +44,33 @@ $desktop: "(min-width: 1024px)";
     }
   }
 
-  .logo {
-    align-self: center;
-    color: $secondary-color;
-    font-size: 2rem;
+  .logo-container {
+    text-decoration: none;
+
+    .logo {
+      width: 200px;
+      height: 100%;
+      color: $secondary-color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .logo-img {
+        height: 100%;
+      }
+    }
   }
 
   .nav-item-container {
     text-decoration: none;
-    color: white;
+  }
+
+  .shop-icon-container {
+    text-decoration: none;
+
+    :hover {
+      color: white;
+      transform: scale(1.1);
+    }
   }
 }

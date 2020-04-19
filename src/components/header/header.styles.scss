@@ -2,14 +2,18 @@ $prime-color: rgb(255, 255, 255);
 $secondary-color: rgb(255, 230, 0);
 $mobile: "(max-width: 1023px)";
 $desktop: "(min-width: 1024px)";
-
+$background-image: linear-gradient(
+  to right,
+  rgb(242, 153, 74),
+  rgb(242, 201, 76)
+);
 .header {
   width: 100vw;
   height: 10vh;
   //   background-color: blue;
   display: flex;
-  justify-content: space-evenly;
-  background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(67, 67, 67));
+  justify-content: center;
+  background-image: $background-image;
   border-bottom: 2px solid $secondary-color;
 
   link {
@@ -18,12 +22,14 @@ $desktop: "(min-width: 1024px)";
 
   .nav-bar {
     display: flex;
+    width: 70%;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
+
     :hover {
       color: $secondary-color;
       cursor: pointer;
-      transform: scale(1.1);
+      transform: scale(1.05);
     }
 
     .nav-item {
@@ -32,6 +38,7 @@ $desktop: "(min-width: 1024px)";
       font-size: 25px;
       margin: 20px;
       color: $prime-color;
+      text-transform: capitalize;
 
       &:hover {
         color: $secondary-color;
@@ -40,6 +47,7 @@ $desktop: "(min-width: 1024px)";
 
       @media #{$mobile} {
         font-size: 12px;
+        margin: 10px;
       }
     }
   }
@@ -47,8 +55,10 @@ $desktop: "(min-width: 1024px)";
   .logo-container {
     text-decoration: none;
 
+    width: 30%;
+
     .logo {
-      width: 200px;
+      // min-width: 10px;
       height: 100%;
       color: $secondary-color;
       display: flex;
@@ -70,7 +80,7 @@ $desktop: "(min-width: 1024px)";
 
     :hover {
       color: white;
-      transform: scale(1.1);
+      transform: scale(1.05);
     }
   }
 }

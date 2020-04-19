@@ -2,10 +2,20 @@ $prime-color: rgb(255, 255, 255);
 $secondary-color: rgb(255, 230, 0);
 $mobile: "(max-width: 1023px)";
 $desktop: "(min-width: 1024px)";
-
+$background-image: linear-gradient(
+  to right,
+  rgb(242, 153, 74),
+  rgb(242, 201, 76)
+);
 .menu {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(67, 67, 67));
+  background-image: $background-image;
+  min-height: 90vh;
+  overflow: scroll;
+
+  @media #{$mobile} {
+    flex-direction: column;
+  }
 }

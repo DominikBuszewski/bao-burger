@@ -19,13 +19,10 @@ const Header = (history, linkUrl, match) => (
       <Link className="nav-item-container" to="/Menu">
         <li className="nav-item">Menu</li>
       </Link>
-      <Link className="nav-item-container" to="/Gallery">
-        <li className="nav-item">Gallery</li>
-      </Link>
       <Link className="nav-item-container" to="/Contact">
         <li className="nav-item">Contact</li>
       </Link>
-      <Link className="shop-icon-container" to="/Cart">
+      <Link className="nav-item-container shop-icon-container" to="/Cart">
         <CartIcon className="nav-item" />
       </Link>
     </ul>

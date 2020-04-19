@@ -1,5 +1,6 @@
 import React from "react";
 import "./about.styles.scss";
+import GallerySlider from "../../components/gallery/gallery.component";
 
 const AboutPage = () => (
   <div className="about">
@@ -13,44 +14,67 @@ const AboutPage = () => (
             mattis hendrerit dolor eros enim, nisi ligula ornare. Hendrerit
             parturient habitant pharetra rutrum gravida porttitor eros feugiat.
             Mollis elit sodales taciti duis praesent id. Consequat urna vitae
-            morbi nunc congue.{" "}
+            morbi nunc congue assa egestas mollis varius; dignissim elementum.
+            Mollis tincidunt mattis hendrerit dolor eros enim, nisi ligula
+            ornare. Hendrerit parturient habitant pharetra rutrum gravida
+            porttitor eros feugiat. Mollis elit sodales taciti duis praesent id.
+            Consequat urna vitae morbi nunc congue.{" "}
+          </p>
+          <p>
+            Lorem ipsum odor amet, consectetuer adipiscing elit. Ac purus in
+            massa egestas mollis varius; dignissim elementum. Mollis tincidunt
+            mattis hendrerit dolor eros enim, nisi ligula ornare. Hendrerit
+            parturient habitant pharetra rutrum gravida porttitor eros feugiat.
+            Mollis elit sodales taciti duis praesent id. Consequat urna vitae
+            morbi nunc congue assa egestas mollis varius; dignissim elementum.
+            Mollis tincidunt mattis hendrerit dolor eros enim, nisi ligula
+            ornare. Hendrerit parturient habitant pharetra rutrum gravida
+            porttitor eros feugiat. Mollis elit sodales taciti duis praesent id.
+            Consequat urna vitae morbi nunc congue.{" "}
           </p>
         </div>
       </section>
+
       <section className="workers-info">
         <h2 className="section-title">MEET YOUR COOK</h2>
         <div className="worker-container">
           <div className="worker">
             <img />
             <h3 className="worker-name">Lorem Ipsum</h3>
+            <div className="cook-image-container">
+              <img className="cook1" />
+            </div>
             <p>
               Lorem ipsum odor amet, consectetuer adipiscing elit. Ac purus in
               massa egestas mollis varius
             </p>
           </div>
           <div className="worker">
-            <img />
             <h3 className="worker-name">Ipsum Lorem</h3>
+            <div className="cook-image-container">
+              <img className="cook2" />
+            </div>
+            <img />
             <p>
               Lorem ipsum odor amet, consectetuer adipiscing elit. Ac purus in
               massa egestas mollis varius
             </p>
           </div>
           <div className="worker">
-            <img />
             <h3 className="worker-name">Lora Ipsem</h3>
+            <div className="cook-image-container">
+              <img className="cook3" />
+            </div>
             <p>
               Lorem ipsum odor amet, consectetuer adipiscing elit. Ac purus in
               massa egestas mollis varius
             </p>
           </div>
         </div>
-      </section>
-      <section className="location">
-        <h2 className="section-title"></h2>
-        <div className="text-wraper">
-          <p></p>
-        </div>
+        <section className="gallery">
+          <h2 className="section-title">GALLERY</h2>
+          <GallerySlider />
+        </section>
       </section>
     </div>
   </div>

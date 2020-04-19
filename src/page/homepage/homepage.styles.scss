@@ -2,18 +2,21 @@ $prime-color: rgb(255, 255, 255);
 $secondary-color: rgb(255, 230, 0);
 $mobile: "(max-width: 1023px)";
 $desktop: "(min-width: 1024px)";
-
+$background-image: linear-gradient(
+  to right,
+  rgb(242, 153, 74),
+  rgb(242, 201, 76)
+);
 .homepage {
   height: 90vh;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(67, 67, 67));
+  background-image: $background-image;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-top: 2px solid $secondary-color;
 
   .sign {
     display: flex;
@@ -48,11 +51,11 @@ $desktop: "(min-width: 1024px)";
 
     .buttons {
       display: flex;
-      justify-content: space-around;
-      width: 50%;
+      justify-content: flex-start;
+      width: 100%;
 
       @media #{$mobile} {
-        width: 80%;
+        width: 100%;
         font-size: 1rem;
         justify-content: space-between;
       }
@@ -62,9 +65,9 @@ $desktop: "(min-width: 1024px)";
         border: none;
         border-radius: 20px;
         color: $secondary-color;
-        height: 40px;
-        width: 150px;
-        margin-top: 10px;
+        min-height: 40px;
+        min-width: 150px;
+        margin: 10px;
         font-size: 20px;
         font-weight: bold;
 
@@ -81,20 +84,23 @@ $desktop: "(min-width: 1024px)";
   }
 
   .burger-image {
-    height: 40vh;
-    width: 40vw;
+    height: 35vh;
+    width: 35vw;
+
+    @media #{$mobile} {
+    }
 
     .burger-image-container {
       width: 100%;
+      // height: 75%;
       display: flex;
       justify-content: center;
       align-items: center;
-      border: 3px solid $secondary-color;
-      border-radius: 50%;
     }
     .burger {
-      width: 70%;
-      height: 80%;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
     }
     // .burger-image-container {
     //   height: 100%;

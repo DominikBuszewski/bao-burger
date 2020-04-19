@@ -15,6 +15,17 @@ const CartOverview = ({ cartItems }) => (
     {cartItems.map((cartItem) => (
       <CartItem key={cartItem.id} item={cartItem} />
     ))}
+    <div className="total-amount-to-pay">
+      <p>
+        TOTAL PAYMENT:
+        {cartItems.reduce(
+          (accumulatedQuantity, cartItem) =>
+            accumulatedQuantity + cartItem.quantity * cartItem.price,
+          0
+        )}
+        $
+      </p>
+    </div>
     <button className="order-button">ORDER NOW</button>
   </div>
 );

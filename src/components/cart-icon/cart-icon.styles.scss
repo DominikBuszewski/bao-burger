@@ -1,8 +1,10 @@
 $prime-color: rgb(255, 255, 255);
 $secondary-color: rgb(255, 230, 0);
-
+$mobile: "(max-width: 1023px)";
+$desktop: "(min-width: 1024px)";
 .cart-icon {
-  width: 100px;
+  min-width: 90px;
+  margin-left: 10px;
   height: 50px;
   display: flex;
   justify-content: space-evenly;
@@ -12,9 +14,20 @@ $secondary-color: rgb(255, 230, 0);
   border-radius: 50px;
   cursor: pointer;
 
+  @media #{$mobile} {
+    font-size: 12px;
+    min-width: 60px;
+    height: 30px;
+  }
+
   .shopping-icon {
     width: 24px;
     height: 24px;
+
+    @media #{$mobile} {
+      width: 15px;
+      height: 15px;
+    }
   }
 
   .item-count {
@@ -22,5 +35,9 @@ $secondary-color: rgb(255, 230, 0);
     font-size: 20px;
     font-weight: bold;
     // bottom: 12px;
+
+    @media #{$mobile} {
+      font-size: 12px;
+    }
   }
 }

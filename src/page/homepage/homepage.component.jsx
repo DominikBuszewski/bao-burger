@@ -9,9 +9,10 @@ const HomePage = () => (
       <h1 className="title">
         <span>BAO </span>BURGER
       </h1>
-      <p className="slogan">Contact us to see yourself.</p>
+      <p className="slogan">Contact us to see for yourself.</p>
       <div className="buttons">
-        <button>LEARN MORE</button>
+        <button className="to-about navigation-button">LEARN MORE</button>
+        <button className="to-menu navigation-button">ORDER</button>
       </div>
     </div>
     <div className="burger-image">

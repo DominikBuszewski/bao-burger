@@ -1,14 +1,22 @@
 $prime-color: rgb(255, 255, 255);
 $secondary-color: rgb(255, 230, 0);
+$mobile: "(max-width: 1023px)";
+$desktop: "(min-width: 1024px)";
 
 .menu-item {
   height: 150px;
   width: 250px;
   display: flex;
   flex-direction: column;
-  background-color: transparent;
+  background-color: black;
   border: 1px solid white;
   position: relative;
+
+  @media #{$mobile} {
+    height: 120px;
+    width: 200px;
+    margin-bottom: 5px;
+  }
 
   &:hover {
     .add-button {
@@ -32,6 +40,7 @@ $secondary-color: rgb(255, 230, 0);
   .menu-item-description {
     display: flex;
     justify-content: space-evenly;
+    color: $prime-color;
   }
 
   .menu-id-number {

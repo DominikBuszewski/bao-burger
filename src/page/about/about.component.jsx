@@ -20,19 +20,12 @@ const AboutPage = () => (
             porttitor eros feugiat. Mollis elit sodales taciti duis praesent id.
             Consequat urna vitae morbi nunc congue.{" "}
           </p>
-          <p>
-            Lorem ipsum odor amet, consectetuer adipiscing elit. Ac purus in
-            massa egestas mollis varius; dignissim elementum. Mollis tincidunt
-            mattis hendrerit dolor eros enim, nisi ligula ornare. Hendrerit
-            parturient habitant pharetra rutrum gravida porttitor eros feugiat.
-            Mollis elit sodales taciti duis praesent id. Consequat urna vitae
-            morbi nunc congue assa egestas mollis varius; dignissim elementum.
-            Mollis tincidunt mattis hendrerit dolor eros enim, nisi ligula
-            ornare. Hendrerit parturient habitant pharetra rutrum gravida
-            porttitor eros feugiat. Mollis elit sodales taciti duis praesent id.
-            Consequat urna vitae morbi nunc congue.{" "}
-          </p>
         </div>
+      </section>
+
+      <section className="gallery">
+        <h2 className="section-title">GALLERY</h2>
+        <GallerySlider />
       </section>
 
       <section className="workers-info">
@@ -71,10 +64,6 @@ const AboutPage = () => (
             </p>
           </div>
         </div>
-        <section className="gallery">
-          <h2 className="section-title">GALLERY</h2>
-          <GallerySlider />
-        </section>
       </section>
     </div>
   </div>

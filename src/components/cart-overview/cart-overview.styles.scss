@@ -35,21 +35,24 @@ $desktop: "(min-width: 1024px)";
     margin: 30px 30px;
   }
 
-  .order-button {
-    margin-top: 15px;
-    background: $secondary-color;
-    color: $prime-color;
-    border: none;
-    width: 150px;
-    height: 50px;
-    font-size: 20px;
+  .payment {
     align-self: center;
-    font-weight: bolder;
-    border-radius: 10px;
-
-    &:hover {
-      cursor: pointer;
-      transform: scale(1.1);
-    }
+    margin-bottom: 5vh;
   }
+  // .order-button {
+  //   margin-top: 15px;
+  //   background: $secondary-color;
+  //   color: $prime-color;
+  //   border: none;
+  //   width: 150px;
+  //   height: 50px;
+  //   font-size: 20px;
+  //   align-self: center;
+  //   font-weight: bolder;
+  //   border-radius: 10px;
+
+  //   &:hover {
+  //     cursor: pointer;
+  //     transform: scale(1.1);
+  //   }
 }

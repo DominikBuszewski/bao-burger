@@ -1,35 +1,200 @@
 $prime-color: rgb(255, 255, 255);
 $secondary-color: rgb(255, 230, 0);
+$third-color: rgb(242, 153, 74);
+$mobile: "(max-width: 1023px)";
+$desktop: "(min-width: 1024px)";
+$background-image: linear-gradient(
+  to right,
+  rgb(242, 153, 74),
+  rgb(242, 201, 76)
+);
 
+::placeholder {
+  color: black;
+  opacity: 0.2;
+}
 .contact-page {
   color: white;
   width: 100%;
-  height: 80vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: space-around;
   min-height: 90vh;
-  .contact-data {
-    height: 30vh;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+  background-color: white;
+  color: rgb(242, 153, 74);
+
+  @media #{$mobile} {
+    font-size: 12px;
   }
 
-  .contact-form {
-    height: 40vh;
+  .contact-data {
+    height: 50vh;
+    width: 60%;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
 
-    input {
-      background-color: transparent;
-      border: none;
-      border-bottom: 2px solid $secondary-color;
-      width: 300px;
-      margin-bottom: 40px;
+    @media #{$mobile} {
+      flex-direction: column;
+      height: 100vh;
+      width: 100%;
+      margin-bottom: 50px;
+    }
+
+    .schedule-table-container {
+      height: 70%;
+      font-size: 1.1em;
+      h2 {
+        margin-bottom: 50px;
+        font-size: 2em;
+      }
+
+      @media #{$mobile} {
+        margin-top: 100px;
+        margin-bottom: 50px;
+      }
+    }
+
+    .contact-form {
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      color: $prime-color;
+
+      @media #{$mobile} {
+        margin: 0 30px 0 30px;
+        height: 80vh;
+      }
+
+      h2 {
+        color: $secondary-color;
+        margin-bottom: 50px;
+        font-size: 2em;
+      }
+
+      label {
+        color: $third-color;
+      }
+
+      input {
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid $secondary-color;
+        width: 100%;
+        outline: none;
+        margin-bottom: 5px;
+      }
+
+      #message {
+        border: 1px solid $secondary-color;
+        outline: none;
+      }
+
+      .send-button {
+        margin-top: 10px;
+        background-color: $secondary-color;
+        width: 150px;
+        height: 50px;
+        border: none;
+        border-radius: 50px;
+        align-self: center;
+        color: $prime-color;
+        font-weight: bolder;
+        font-size: 1.2em;
+        cursor: pointer;
+
+        @media #{$mobile} {
+          width: 120px;
+          font-size: 1em;
+          height: 40px;
+        }
+      }
+    }
+  }
+
+  .social-media-container {
+    background-image: $background-image;
+    width: 100%;
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $prime-color;
+
+    @media #{$mobile} {
+      flex-direction: column;
+    }
+
+    .block {
+      padding: 30px;
+      height: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      border-right: 1px solid $secondary-color;
+
+      :last-child {
+        border-right: none;
+      }
+
+      p {
+        color: rgb(54, 50, 50);
+        opacity: 0.8;
+        font-size: 1em;
+      }
+    }
+
+    .social-media {
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: center;
+      border-left: 1px solid $secondary-color;
+
+      .icons-container {
+        display: flex;
+        justify-content: space-around;
+        margin: 10px;
+
+        .social-icons {
+          height: 20px;
+          width: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+    .visit-us {
+      h2 {
+        text-align: center;
+      }
+    }
+
+    .newsletter {
+      p {
+        text-align: right;
+      }
+      @media #{$mobile} {
+        margin-bottom: 50px;
+      }
+
+      .email-container {
+        display: flex;
+        justify-content: center;
+
+        input {
+          width: 90%;
+        }
+
+        .email-icon {
+          height: 30px;
+          width: 30px;
+          cursor: pointer;
+          margin-left: 5px;
+        }
+      }
     }
   }
 }

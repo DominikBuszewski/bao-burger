@@ -1,6 +1,7 @@
 import React from "react";
 import "./homepage.styles.scss";
 import burger from "../../assets/burger.png";
+import { Link } from "react-router-dom";
 
 const HomePage = () => (
   <div className="homepage">
@@ -11,8 +12,12 @@ const HomePage = () => (
       </h1>
       <p className="slogan">Contact us to see for yourself.</p>
       <div className="buttons">
-        <button className="to-about navigation-button">LEARN MORE</button>
-        <button className="to-menu navigation-button">ORDER</button>
+        <Link to="/About">
+          <button className="to-about navigation-button">LEARN MORE</button>
+        </Link>
+        <Link to="/Menu">
+          <button className="to-menu navigation-button">ORDER</button>
+        </Link>
       </div>
     </div>
     <div className="burger-image">

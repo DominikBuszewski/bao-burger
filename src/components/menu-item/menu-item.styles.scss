@@ -1,5 +1,6 @@
 $prime-color: rgb(255, 255, 255);
 $secondary-color: rgb(255, 230, 0);
+$third-color: rgb(242, 153, 74);
 $mobile: "(max-width: 1023px)";
 $desktop: "(min-width: 1024px)";
 
@@ -8,8 +9,8 @@ $desktop: "(min-width: 1024px)";
   width: 250px;
   display: flex;
   flex-direction: column;
-  background-color: black;
-  border: 1px solid white;
+  background-color: $prime-color;
+
   position: relative;
 
   @media #{$mobile} {
@@ -32,6 +33,7 @@ $desktop: "(min-width: 1024px)";
   .menu-item-image {
     height: 100%;
     width: 100%;
+
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -40,7 +42,7 @@ $desktop: "(min-width: 1024px)";
   .menu-item-description {
     display: flex;
     justify-content: space-evenly;
-    color: $prime-color;
+    color: $third-color;
   }
 
   .menu-id-number {

@@ -5,56 +5,60 @@ $mobile: "(max-width: 1023px)";
 $desktop: "(min-width: 1024px)";
 
 .menu-item {
-  height: 150px;
-  width: 250px;
-  display: flex;
-  flex-direction: column;
-  background-color: $prime-color;
+	height: 150px;
+	width: 250px;
+	display: flex;
+	flex-direction: column;
+	background-color: #7c203a;
+	-webkit-box-shadow: -1px 5px 33px -5px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: -1px 5px 33px -5px rgba(0, 0, 0, 0.75);
+	box-shadow: -1px 5px 13px -5px rgba(0, 0, 0, 0.75);
+	border-radius: 10px;
 
-  position: relative;
+	position: relative;
 
-  @media #{$mobile} {
-    height: 120px;
-    width: 200px;
-    margin-bottom: 5px;
-  }
+	@media #{$mobile} {
+		height: 120px;
+		width: 200px;
+		margin-bottom: 5px;
+	}
 
-  &:hover {
-    .add-button {
-      display: block;
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      opacity: 0.8;
-      cursor: pointer;
-    }
-  }
+	&:hover {
+		.add-button {
+			display: block;
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			opacity: 0.8;
+			cursor: pointer;
+		}
+	}
 
-  .menu-item-image {
-    height: 100%;
-    width: 100%;
+	.menu-item-image {
+		height: 100%;
+		width: 100%;
 
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
 
-  .menu-item-description {
-    display: flex;
-    justify-content: space-evenly;
-    color: $third-color;
-  }
+	.menu-item-description {
+		display: flex;
+		justify-content: space-evenly;
+		color: $prime-color;
+	}
 
-  .menu-id-number {
-    display: none;
-  }
+	.menu-id-number {
+		display: none;
+	}
 
-  .add-button {
-    background-color: transparent;
-    color: $prime-color;
-    border: none;
-    height: 30px;
-    background-color: black;
-    display: none;
-  }
+	.add-button {
+		background-color: transparent;
+		color: $prime-color;
+		border: none;
+		height: 30px;
+		background-color: black;
+		display: none;
+	}
 }

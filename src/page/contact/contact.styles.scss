@@ -1,200 +1,238 @@
 $prime-color: rgb(255, 255, 255);
 $secondary-color: rgb(255, 230, 0);
 $third-color: rgb(242, 153, 74);
+$fourth-color: #7c203a;
 $mobile: "(max-width: 1023px)";
 $desktop: "(min-width: 1024px)";
 $background-image: linear-gradient(
-  to right,
-  rgb(242, 153, 74),
-  rgb(242, 201, 76)
+	to right,
+	rgb(242, 153, 74),
+	rgb(242, 201, 76)
 );
 
 ::placeholder {
-  color: black;
-  opacity: 0.2;
+	color: black;
+	opacity: 0.2;
 }
 .contact-page {
-  color: white;
-  width: 100%;
-  min-height: 90vh;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-around;
-  min-height: 90vh;
-  background-color: white;
-  color: rgb(242, 153, 74);
+	color: white;
+	width: 100%;
+	min-height: 90vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-around;
+	min-height: 90vh;
+	background-color: $prime-color;
+	color: rgb(242, 153, 74);
 
-  @media #{$mobile} {
-    font-size: 12px;
-  }
+	@media #{$mobile} {
+		font-size: 12px;
+	}
 
-  .contact-data {
-    height: 50vh;
-    width: 60%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+	.contact-data {
+		height: 50vh;
+		width: 60%;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
 
-    @media #{$mobile} {
-      flex-direction: column;
-      height: 100vh;
-      width: 100%;
-      margin-bottom: 50px;
-    }
+		@media #{$mobile} {
+			flex-direction: column;
+			height: 100vh;
+			width: 100%;
+			margin-bottom: 50px;
+		}
 
-    .schedule-table-container {
-      height: 70%;
-      font-size: 1.1em;
-      h2 {
-        margin-bottom: 50px;
-        font-size: 2em;
-      }
+		.schedule-table-container {
+			height: 90%;
+			font-size: 1.1em;
 
-      @media #{$mobile} {
-        margin-top: 100px;
-        margin-bottom: 50px;
-      }
-    }
+			display: flex;
+			justify-content: center;
+			align-items: center;
 
-    .contact-form {
-      height: 70%;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: center;
-      color: $prime-color;
+			.schedule-table {
+				width: 90%;
 
-      @media #{$mobile} {
-        margin: 0 30px 0 30px;
-        height: 80vh;
-      }
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+				justify-content: center;
 
-      h2 {
-        color: $secondary-color;
-        margin-bottom: 50px;
-        font-size: 2em;
-      }
+				@media #{$mobile} {
+				}
+				h2 {
+					margin-bottom: 50px;
+					font-size: 2em;
+					color: $fourth-color;
+					text-align: center;
+				}
 
-      label {
-        color: $third-color;
-      }
+				@media #{$mobile} {
+					// margin-top: 100px;
+					// margin-bottom: 50px;
+				}
+				tr {
+					td {
+						width: 150px;
+					}
+				}
+			}
+		}
 
-      input {
-        background-color: transparent;
-        border: none;
-        border-bottom: 2px solid $secondary-color;
-        width: 100%;
-        outline: none;
-        margin-bottom: 5px;
-      }
+		.contact-form {
+			height: 70%;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: center;
 
-      #message {
-        border: 1px solid $secondary-color;
-        outline: none;
-      }
+			@media #{$mobile} {
+				margin: 0 30px 0 30px;
+				height: 80vh;
+				width: 80%;
+			}
 
-      .send-button {
-        margin-top: 10px;
-        background-color: $secondary-color;
-        width: 150px;
-        height: 50px;
-        border: none;
-        border-radius: 50px;
-        align-self: center;
-        color: $prime-color;
-        font-weight: bolder;
-        font-size: 1.2em;
-        cursor: pointer;
+			h2 {
+				color: $secondary-color;
+				margin-bottom: 50px;
+				font-size: 2em;
+			}
 
-        @media #{$mobile} {
-          width: 120px;
-          font-size: 1em;
-          height: 40px;
-        }
-      }
-    }
-  }
+			label {
+				color: $third-color;
+			}
 
-  .social-media-container {
-    background-image: $background-image;
-    width: 100%;
-    min-height: 40vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $prime-color;
+			input {
+				background-color: transparent;
+				border: none;
+				border-bottom: 2px solid $secondary-color;
+				width: 100%;
+				outline: none;
+				margin-bottom: 5px;
+			}
 
-    @media #{$mobile} {
-      flex-direction: column;
-    }
+			#message {
+				border: 1px solid $secondary-color;
+				outline: none;
 
-    .block {
-      padding: 30px;
-      height: 80%;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      border-right: 1px solid $secondary-color;
+				@media #{$mobile} {
+					width: 100%;
+				}
+			}
 
-      :last-child {
-        border-right: none;
-      }
+			.send-button {
+				margin-top: 10px;
+				background-color: $secondary-color;
+				width: 150px;
+				height: 50px;
+				border: none;
+				border-radius: 50px;
+				align-self: center;
+				color: $prime-color;
+				font-weight: bolder;
+				font-size: 1.2em;
+				cursor: pointer;
 
-      p {
-        color: rgb(54, 50, 50);
-        opacity: 0.8;
-        font-size: 1em;
-      }
-    }
+				@media #{$mobile} {
+					width: 120px;
+					font-size: 1em;
+					height: 40px;
+				}
+			}
+		}
+	}
 
-    .social-media {
-      // display: flex;
-      // flex-direction: column;
-      // justify-content: center;
-      border-left: 1px solid $secondary-color;
+	.social-media-container {
+		background-image: $background-image;
+		width: 100%;
+		min-height: 40vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: $prime-color;
 
-      .icons-container {
-        display: flex;
-        justify-content: space-around;
-        margin: 10px;
+		@media #{$mobile} {
+			flex-direction: column;
+		}
 
-        .social-icons {
-          height: 20px;
-          width: 20px;
-          cursor: pointer;
-        }
-      }
-    }
-    .visit-us {
-      h2 {
-        text-align: center;
-      }
-    }
+		.block {
+			padding: 30px;
+			height: 80%;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			border-right: 1px solid $secondary-color;
+			@media #{$mobile} {
+				border: none;
+			}
 
-    .newsletter {
-      p {
-        text-align: right;
-      }
-      @media #{$mobile} {
-        margin-bottom: 50px;
-      }
+			:last-child {
+				border-right: none;
+			}
 
-      .email-container {
-        display: flex;
-        justify-content: center;
+			p {
+				color: rgb(54, 50, 50);
+				opacity: 0.8;
+				font-size: 1em;
+			}
+		}
 
-        input {
-          width: 90%;
-        }
+		.social-media {
+			// display: flex;
+			// flex-direction: column;
+			// justify-content: center;
+			border-left: 1px solid $secondary-color;
 
-        .email-icon {
-          height: 30px;
-          width: 30px;
-          cursor: pointer;
-          margin-left: 5px;
-        }
-      }
-    }
-  }
+			@media #{$mobile} {
+				border: none;
+			}
+
+			.icons-container {
+				display: flex;
+				justify-content: space-around;
+				margin: 10px;
+
+				.social-icons {
+					height: 20px;
+					width: 20px;
+					cursor: pointer;
+					&:hover {
+						transform: scale(1.1) rotate(5deg);
+					}
+				}
+			}
+		}
+		.visit-us {
+			h2 {
+				text-align: center;
+			}
+		}
+
+		.newsletter {
+			p {
+				text-align: right;
+			}
+			@media #{$mobile} {
+				margin-bottom: 50px;
+			}
+
+			.email-container {
+				display: flex;
+				justify-content: center;
+
+				input {
+					width: 90%;
+				}
+
+				.email-icon {
+					height: 30px;
+					width: 30px;
+					cursor: pointer;
+					margin-left: 5px;
+				}
+			}
+		}
+	}
 }

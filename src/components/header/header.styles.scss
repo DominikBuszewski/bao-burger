@@ -1,86 +1,87 @@
 $prime-color: rgb(255, 255, 255);
 $secondary-color: rgb(255, 230, 0);
+$fourth-color: #7c203a;
 $mobile: "(max-width: 1023px)";
 $desktop: "(min-width: 1024px)";
 $background-image: linear-gradient(
-  to right,
-  rgb(242, 153, 74),
-  rgb(242, 201, 76)
+	to right,
+	rgb(242, 153, 74),
+	rgb(242, 201, 76)
 );
 .header {
-  width: 100vw;
-  height: 10vh;
-  //   background-color: blue;
-  display: flex;
-  justify-content: center;
-  background-color: rgb(242, 153, 74);
-  border-bottom: 2px solid $secondary-color;
+	width: 100vw;
+	height: 10vh;
+	//   background-color: blue;
+	display: flex;
+	justify-content: center;
+	background-color: $fourth-color;
+	// border-bottom: 2px solid $secondary-color;
 
-  link {
-    text-decoration: none;
-  }
+	link {
+		text-decoration: none;
+	}
 
-  .nav-bar {
-    display: flex;
-    width: 70%;
-    align-items: center;
-    justify-content: center;
+	.nav-bar {
+		display: flex;
+		width: 70%;
+		align-items: center;
+		justify-content: center;
 
-    :hover {
-      color: $secondary-color;
-      cursor: pointer;
-      transform: scale(1.05);
-    }
+		:hover {
+			color: $secondary-color;
+			cursor: pointer;
+			transform: scale(1.05);
+		}
 
-    .nav-item {
-      list-style: none;
-      text-decoration: none;
-      font-size: 25px;
-      margin: 20px;
-      color: $prime-color;
-      text-transform: capitalize;
+		.nav-item {
+			list-style: none;
+			text-decoration: none;
+			font-size: 25px;
+			margin: 20px;
+			color: $prime-color;
+			text-transform: capitalize;
 
-      &:hover {
-        color: $secondary-color;
-        cursor: pointer;
-      }
+			&:hover {
+				color: $secondary-color;
+				cursor: pointer;
+			}
 
-      @media #{$mobile} {
-        font-size: 12px;
-        margin: 10px;
-      }
-    }
-  }
+			@media #{$mobile} {
+				font-size: 12px;
+				margin: 10px;
+			}
+		}
+	}
 
-  .logo-container {
-    text-decoration: none;
+	.logo-container {
+		text-decoration: none;
 
-    width: 30%;
+		width: 30%;
 
-    .logo {
-      // min-width: 10px;
-      height: 100%;
-      color: $secondary-color;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+		.logo {
+			// min-width: 10px;
+			height: 100%;
+			color: $secondary-color;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 
-      .logo-img {
-        height: 100%;
-      }
-    }
-  }
+			.logo-img {
+				height: 100%;
+			}
+		}
+	}
 
-  .nav-item-container {
-    text-decoration: none;
-  }
+	.nav-item-container {
+		text-decoration: none;
+	}
 
-  .shop-icon-container {
-    text-decoration: none;
+	.shop-icon-container {
+		text-decoration: none;
 
-    :hover {
-      color: white;
-      transform: scale(1.05);
-    }
-  }
+		:hover {
+			color: white;
+			transform: scale(1.05);
+		}
+	}
 }

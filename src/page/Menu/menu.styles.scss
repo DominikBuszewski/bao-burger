@@ -1,21 +1,23 @@
 $prime-color: rgb(255, 255, 255);
 $secondary-color: rgb(255, 230, 0);
+$third-color: rgb(242, 153, 74);
 $mobile: "(max-width: 1023px)";
 $desktop: "(min-width: 1024px)";
 $background-image: linear-gradient(
-  to right,
-  rgb(242, 153, 74),
-  rgb(242, 201, 76)
+	to right,
+	rgb(242, 153, 74),
+	rgb(242, 201, 76)
 );
 .menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: $background-image;
-  min-height: 90vh;
-  overflow: scroll;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	// background-image: $background-image;
+	background-color: $prime-color;
+	min-height: 90vh;
+	overflow: scroll;
 
-  @media #{$mobile} {
-    flex-direction: column;
-  }
+	@media #{$mobile} {
+		flex-direction: column;
+	}
 }
